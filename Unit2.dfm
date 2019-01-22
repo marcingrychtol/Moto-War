@@ -1,10 +1,10 @@
 object Form2: TForm2
-  Left = 450
+  Left = 443
   Top = 363
   BorderStyle = bsToolWindow
   Caption = 'Dane kontaktowe autora'
   ClientHeight = 260
-  ClientWidth = 335
+  ClientWidth = 354
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -15,7 +15,7 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
-    Left = 0
+    Left = 8
     Top = 40
     Width = 337
     Height = 25
@@ -30,7 +30,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label2: TLabel
-    Left = 0
+    Left = 8
     Top = 72
     Width = 337
     Height = 25
@@ -45,7 +45,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label3: TLabel
-    Left = 0
+    Left = 8
     Top = 104
     Width = 337
     Height = 25
@@ -60,7 +60,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object Label4: TLabel
-    Left = 8
+    Left = 16
     Top = 136
     Width = 321
     Height = 49
@@ -78,7 +78,7 @@ object Form2: TForm2
     WordWrap = True
   end
   object Label5: TLabel
-    Left = 0
+    Left = 8
     Top = 184
     Width = 337
     Height = 41
@@ -96,7 +96,7 @@ object Form2: TForm2
     WordWrap = True
   end
   object Label6: TLabel
-    Left = -2
+    Left = 6
     Top = 8
     Width = 337
     Height = 25
@@ -111,7 +111,7 @@ object Form2: TForm2
     ParentFont = False
   end
   object Button1: TButton
-    Left = 128
+    Left = 136
     Top = 232
     Width = 81
     Height = 25
