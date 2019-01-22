@@ -1,0 +1,42 @@
+       Karta karta[16];
+       fstream in_karty("MW_karty.txt");
+       int nrlinii_plik = 1;
+       int nrlinii_karta = 1;
+       string linia;
+
+       for (int i=1; i<=16; i++)
+       {
+       karta[i-1].setNr(i);
+       }
+
+       while(getline(in_karty,linia))
+       {
+                karta[ (nrlinii_plik - 1) /18 ].setVal(nrlinii_karta,linia);
+                if(nrlinii_karta==18) nrlinii_karta=0;
+                nrlinii_karta++;
+                nrlinii_plik++;
+       }
+
+       in_karty.close();
+
+       CarTitle1->Caption=karta[0].getName("name");
+		CarBlueprint1->Picture->LoadFromFile(karta[0].getPath("mmedia").c_str());
+       Volume1->Caption=karta[0].getValStr(0);
+       Power1->Caption=karta[0].getValStr(1);
+       Torque1->Caption=karta[0].getValStr(2);
+       Speed1->Caption=karta[0].getValStr(3);
+       Weight1->Caption=karta[0].getValStr(4);
+       Acc1->Caption=karta[0].getValStr(5);
+       Eco1->Caption=karta[0].getValStr(6);
+       Price1->Caption=karta[0].getValStr(7);
+	   
+	   class Krupier
+{
+        public:
+         Krupier(); //konstruktor tasuje talię kart
+         void getCards(int p); //1 lub 2: zwraca połowę kart w postaci połowy tablicy
+         int ruch(int gracz, int ile_kart); //modyfikuje talię kart po turze, zmienia lampki
+        private:
+         int talia1[16];
+         int talia2[16];
+}
